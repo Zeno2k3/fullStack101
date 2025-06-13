@@ -1,79 +1,125 @@
-# 🌐 Yêu Cầu Xây Dựng Trang Web Profile Cá Nhân (Chuẩn HTML5)
+# 🚀 BÀI TẬP THỰC HÀNH HTML5: XÂY DỰNG TRANG WEB PROFILE CÁ NHÂN
 
-## ✅ I. Cấu Trúc Cơ Bản (HTML5)
-
-- Sử dụng `<!DOCTYPE html>` để khai báo tài liệu HTML5
-- Thẻ `<html lang="vi">`: đặt ngôn ngữ trang là tiếng Việt
-- Phần `<head>` gồm:
-  - `<meta charset="UTF-8">`
-  - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
-  - `<title>`, `<link rel="stylesheet">`
-- Phần `<body>`: chứa toàn bộ nội dung hiển thị
-
-## ✅ II. Thẻ Ngữ Nghĩa (Semantic Tags)
-
-| Nội dung            | Thẻ nên dùng           |
-| ------------------- | ---------------------- |
-| Tiêu đề, điều hướng | `<header>`, `<nav>`    |
-| Giới thiệu          | `<main>`, `<section>`  |
-| Dự án               | `<article>`            |
-| Kỹ năng, liên hệ    | `<section>`, `<aside>` |
-| Chân trang          | `<footer>`             |
-
-### ⚠️ Lưu ý:
-
-- Chỉ sử dụng **1 thẻ `<main>`**
-- Mỗi `<section>` và `<article>` nên có tiêu đề (`<h1>` - `<h6>`)
-
-## ✅ III. Biểu Mẫu (Forms)
-
-### Trường thông tin phổ biến:
-
-- Họ tên: `<input type="text">`
-- Email: `<input type="email">`
-- SĐT: `<input type="tel">`
-- Tin nhắn: `<textarea>`
-- Nút gửi: `<input type="submit">`
-
-### Kèm theo:
-
-- Dùng `<label>` tương ứng với mỗi input
-- Áp dụng validation: `required`, `pattern`, `minlength`, `maxlength`, ...
-- Sử dụng các thuộc tính ARIA: `aria-label`, `aria-required`, `aria-invalid`, ...
-
-## ✅ IV. Liên Kết Và Tài Liệu
-
-- Liên kết ngoài:  
-  `<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>`
-- Tải xuống file:  
-  `<a href="cv.pdf" download>Download CV</a>`
-- Favicon:  
-  `<link rel="icon" href="favicon.ico">`
-
-## ✅ V. Thuộc Tính Toàn Cục
-
-- `id`, `class`, `title`, `tabindex`, `lang`, `data-*`
-- Dùng `id` duy nhất, `class` để nhóm & tạo style
-
-## ✅ VI. Thêm Nội Dung Đa Phương Tiện
-
-- Ảnh đại diện:  
-  `<img src="avatar.jpg" alt="Ảnh đại diện">`
-- Video giới thiệu (nếu có):  
-  `<video src="intro.mp4" controls poster="thumb.jpg"></video>`
-
-## ✅ VII. SEO Cơ Bản
-
-- `<meta name="description" content="Giới thiệu cá nhân">`
-- `<meta name="author" content="Tên của bạn">`
-- Alt text cho hình ảnh
-
-## ✅ VIII. Hỗ Trợ Truy Cập (Accessibility - ARIA)
-
-- Gắn `aria-label` nếu thiếu `<label>`
-- Dùng `aria-describedby` để mô tả hướng dẫn
-- Dùng `aria-invalid`, `role="alert"` khi có lỗi
+> 🎯 Mục tiêu: Vận dụng kiến thức HTML5 để tạo một trang web giới thiệu bản thân, có cấu trúc hợp lý, hỗ trợ truy cập và tối ưu cơ bản cho công cụ tìm kiếm.
 
 ---
 
-**🎯 Gợi ý:** Bạn có thể sử dụng công cụ Lighthouse, axe DevTools, NVDA để kiểm tra tính truy cập và chuẩn HTML.
+## 📌 Yêu Cầu Tổng Quan
+
+- Tạo **một file HTML duy nhất** (ví dụ: `index.html`)
+- Trang phải có đầy đủ phần **đầu trang, nội dung chính, chân trang**
+- Sử dụng **các thẻ semantic** phù hợp
+- Có phần **biểu mẫu liên hệ**
+- Bổ sung **hình ảnh**, **liên kết ngoài**, và **nội dung mô tả cá nhân**
+
+---
+
+## I. 📂 CẤU TRÚC CƠ BẢN
+
+1. Tạo cấu trúc HTML5 chuẩn, bao gồm:
+   - Khai báo doctype
+   - Thiết lập ngôn ngữ phù hợp
+   - Bộ mã ký tự và khung nhìn phù hợp trên thiết bị di động
+
+📌 *Câu hỏi gợi ý*:
+- Làm thế nào để đảm bảo trang web hiển thị tốt trên điện thoại?
+- Vì sao phải dùng `<!DOCTYPE html>`?
+
+---
+
+## II. 🧱 THẺ NGỮ NGHĨA (SEMANTIC)
+
+2. Chia bố cục website thành các khu vực:
+   - Khu vực điều hướng
+   - Nội dung giới thiệu bản thân
+   - Danh sách dự án hoặc sản phẩm
+   - Thông tin kỹ năng / sở thích
+   - Phần liên hệ và chân trang
+
+📌 *Thử thách*:
+- Không dùng `<div>` cho toàn bộ cấu trúc.
+- Lựa chọn đúng **thẻ semantic** phù hợp với từng phần.
+
+---
+
+## III. ✉️ FORM LIÊN HỆ
+
+3. Tạo một **form liên hệ** với các trường:
+   - Họ tên
+   - Email
+   - Số điện thoại
+   - Nội dung tin nhắn
+   - Nút gửi
+
+🎯 Yêu cầu:
+- Mỗi trường phải đi kèm `<label>`
+- Có xác thực dữ liệu bằng thuộc tính HTML
+- Áp dụng tối thiểu 2 thuộc tính ARIA phù hợp
+
+📌 *Câu hỏi thêm*:
+- Trường nào nên bắt buộc nhập (`required`)?
+- Khi nào cần dùng `aria-label` thay vì `<label>`?
+
+---
+
+## IV. 🔗 LIÊN KẾT VÀ TÀI LIỆU
+
+4. Chèn các liên kết sau:
+   - Liên kết đến một trang mạng xã hội
+   - Nút tải xuống CV
+   - Gắn favicon
+
+📌 *Thử thách*:
+- Làm sao để mở liên kết ngoài mà vẫn đảm bảo bảo mật?
+- Bạn có thể thêm thuộc tính gì để liên kết hoạt động thân thiện hơn?
+
+---
+
+## V. 🧩 THUỘC TÍNH TOÀN CỤC
+
+5. Sử dụng hợp lý:
+   - `id`, `class`, `title`, `lang`, `data-*`
+
+📌 *Yêu cầu*:
+- Mỗi phần chính phải có một `id` duy nhất
+- Ít nhất một phần tử có sử dụng `data-*` để chứa dữ liệu tùy chỉnh
+
+---
+
+## VI. 🎥 NỘI DUNG ĐA PHƯƠNG TIỆN
+
+6. Thêm:
+   - Một ảnh đại diện
+   - Một video giới thiệu bản thân (nếu có)
+
+📌 *Gợi ý suy luận*:
+- Nếu ảnh không hiển thị thì nội dung gì sẽ được đọc?
+- Nên dùng thuộc tính gì để video hiển thị đẹp hơn?
+
+---
+
+## VII. 🔍 SEO CƠ BẢN
+
+7. Thêm các thẻ meta:
+   - Mô tả ngắn về bản thân
+   - Tên tác giả
+
+📌 *Tư duy mở rộng*:
+- Thẻ meta nào hỗ trợ mô tả nội dung?
+- Thẻ `alt` có tác dụng gì ngoài SEO?
+
+---
+
+## VIII. ♿ TRUY CẬP (ACCESSIBILITY)
+
+8. Đảm bảo:
+   - Người dùng sử dụng bàn phím vẫn có thể truy cập được nội dung
+   - Có hỗ trợ thông báo lỗi khi điền sai form
+
+📌 *Thử thách cuối*:
+- Thêm `role="alert"` ở đâu khi cần hiển thị lỗi?
+- Dùng thuộc tính nào để mô tả hướng dẫn chi tiết cho input?
+
+---
+
+Chúc bạn hoàn thành bài tập một cách sáng tạo và chuẩn HTML5 nhất! 🚀

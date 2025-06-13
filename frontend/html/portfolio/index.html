@@ -1,183 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- khai báo doctype -->
+<html lang="vi">
+  <!-- khai báo ngôn ngữ của trang web -->
   <head>
     <meta charset="UTF-8" />
+    <!-- khai báo bộ mã ký tự -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Đây là trang portfolio của tôi, nơi tôi giới thiệu các dự án và kỹ năng của mình."
+      content="Trang web cá nhân của Trần Minh Quân, một lập trình viên web."
     />
-    <meta name="keywords" content="portfolio, dự án, kỹ năng, cá nhân" />
-    <meta name="author" content="Trần Minh Quân." />
-
+    <meta name="author" content="mihhquan09.dev" />
+    <!-- khai báo viewport cho thiết bị di động -->
+    <title>Trần Minh Quân</title>
+    <!-- tiêu đề của trang web -->
     <link rel="icon" href="image/zalo.jpg" />
-    <title>Profrolio width Minh Quân</title>
+    <!-- liên kết đến tệp CSS -->
   </head>
-  <body style="display: flex; flex-direction: column">
+  <body style="padding: 36px">
     <header
-      style="
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: #f0f0f0;
-      "
+      style="display: flex; justify-content: space-between; align-items: center"
     >
-      <h1>Portfolio của Trần Minh Quân</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">Giới thiệu</a></li>
-          <li><a href="#projects">Dự án</a></li>
-          <li><a href="#skills">Kỹ năng</a></li>
-          <li><a href="#blog">Trang chia sẻ kiến thức</a></li>
-          <li><a href="#contact">Liên hệ</a></li>
+      <h1>MinhQuan.dev</h1>
+      <nav style="display: flex; width: 50%">
+        <ul
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <li>
+            <a href="#home">Trang chủ</a>
+            <!-- liên kết đến phần Trang chủ -->
+          </li>
+          <li>
+            <a href="#about">Giới thiệu</a>
+            <!-- liên kết đến phần Giới thiệu -->
+          </li>
+          <li>
+            <a href="#skills">Kỹ năng</a>
+            <!-- liên kết đến phần Kỹ năng -->
+          </li>
+          <li>
+            <a href="#projects">Dự án</a>
+            <!-- liên kết đến phần Dự án -->
+          </li>
+          <li>
+            <a href="#contact">Liên hệ</a>
+            <!-- liên kết đến phần Liên hệ -->
+          </li>
         </ul>
       </nav>
     </header>
-    <main style="width: 100%; background-color: #ffffff">
+    <main>
+      <section
+        id="home"
+        style="
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <h1>Trần Minh Quân</h1>
+        <img
+          src="image/zalo.jpg"
+          alt="Hình đại diện"
+          style="width: 150px; height: 150px; border-radius: 50%"
+        />
+        <p>Xin chào, tôi là Trần Minh Quân, một lập trình viên web.</p>
+      </section>
       <section
         id="about"
         style="
           height: 100vh;
           display: flex;
-          text-align: center;
-          padding: 20px;
-          justify-content: center;
           align-items: center;
+          justify-content: center;
         "
       >
         <h2>Giới thiệu</h2>
         <p>
-          Tôi là Trần Minh Quân, một lập trình viên đam mê công nghệ và phát
-          triển phần mềm. Tôi có kinh nghiệm trong việc xây dựng các ứng dụng
-          web và di động.
+          Tôi là một lập trình viên web với kinh nghiệm trong việc phát triển
+          các ứng dụng web hiện đại.
         </p>
-        <figure>
-          <img
-            src="image/zalo.jpg"
-            title="Ảnh đại diện của Trần Minh Quân"
-            alt="Ảnh đại diện của Trần Minh Quân"
-            width="200"
-            height="200"
-          />
-          <figcaption>Trần Minh Quân</figcaption>
-        </figure>
-        <button
-          onclick="alert('Cảm ơn bạn đã ghé thăm trang portfolio của tôi!')"
-        >
-          Nhấn vào đây để gửi lời chào
-        </button>
-      </section>
-      <section
-        id="projects"
-        style="
-          height: 100vh;
-          display: flex;
-          text-align: center;
-          padding: 20px;
-          justify-content: center;
-          align-items: center;
-        "
-      >
-        <h2>Dự án</h2>
-        <ul>
-          <li>
-            <strong>Dự án 1:</strong> Ứng dụng quản lý công việc - Một ứng dụng
-            web giúp người dùng quản lý công việc hàng ngày.
-          </li>
-          <li>
-            <strong>Dự án 2:</strong> Trang web thương mại điện tử - Nền tảng
-            mua sắm trực tuyến với nhiều tính năng hấp dẫn.
-          </li>
-          <li>
-            <strong>Dự án 3:</strong> Ứng dụng di động - Ứng dụng cho phép người
-            dùng theo dõi sức khỏe và thể dục.
-          </li>
-        </ul>
       </section>
       <section
         id="skills"
         style="
           height: 100vh;
           display: flex;
-          text-align: center;
-          padding: 20px;
-          justify-content: center;
           align-items: center;
+          justify-content: center;
         "
       >
         <h2>Kỹ năng</h2>
         <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>React, Node.js</li>
-          <li>Python, Django</li>
-          <li>SQL, MongoDB</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
         </ul>
       </section>
-      <article
-        id="blog"
+      <section
+        id="projects"
         style="
           height: 100vh;
           display: flex;
-          text-align: center;
-          padding: 20px;
-          justify-content: center;
+          flex-direction: column;
           align-items: center;
+          justify-content: center;
         "
       >
-        <h2>Những bài viết</h2>
-        <article>
-          <h3>Hướng dẫn lập trình cơ bản</h3>
-          <p>
-            Trong bài viết này, tôi sẽ hướng dẫn bạn các khái niệm cơ bản về lập
-            trình, bao gồm biến, vòng lặp và hàm.
-          </p>
-        </article>
-        <article>
-          <h3>Hướng dẫn lập trình nâng cao</h3>
-          <p>
-            Trong bài viết này, tôi sẽ hướng dẫn bạn các khái niệm nâng cao về
-            lập trình, bao gồm cấu trúc dữ liệu,giải thuật.
-          </p>
-        </article>
-        <article>
-          <h3>Hướng dẫn lập trình OOP</h3>
-          <p>
-            Trong bài viết này, tôi sẽ hướng dẫn bạn các khái niệm cơ bản về lập
-            trình OOP, bao gồm ghi đè, trừu tượng, kế thừa, đa hình.
-          </p>
-        </article>
-      </article>
+        <h2>Các Dự án</h2>
+        <div style="display: flex; overflow-x: auto">
+          <article>
+            <h2>Dự án 0</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article>
+            <h2>Dự án 1</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article>
+            <h2>Dự án 2</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article>
+            <h2>Dự án 3</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article>
+            <h2>Dự án 4</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article>
+            <h2>Dự án 5</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        id="contact"
+        style="
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <h2>Liên hệ</h2>
+        <form style="display: flex; flex-direction: column; gap: 8px">
+          <label for="name" aria-label="Nhập Tên người dùng">Tên:</label>
+          <input type="text" id="name" name="name" required min="10" max="30" />
+          <label for="email" aria-label="Nhập email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone" aria-label="Nhập số điện thoại"
+            >Số điện thoại</label
+          >
+          <input type="tel" id="phone" name="phone" required />
+          <label for="message" aria-label="Gửi tin nhắn">Tin nhắn:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Gửi</button>
+          
+        </form>
+
+        <a href="https://www.facebook.com/minquan203/">Liện hệ qua facebook</a>
+        <a href="image/zalo.jpg" download>Tải CV</a>
+      </section>
     </main>
-    <footer
-      id="contact"
-      style="
-        text-align: center;
-        display: flex;
-        padding: 20px;
-        background-color: #f0f0f0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      "
-    >
-      <h2>Liên hệ</h2>
-      <form style="gap: 1; display: flex; flex-direction: column;">
-        <label for="name">Tên:</label>
-        <input type="text" id="name" name="name" required />
-        <br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <br />
-        <label for="message">Tin nhắn:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <br />
-        <button type="submit" aria-label="Nút gửi">Gửi</button>
-      </form>
-      <p>
-        Bạn có thể liên hệ với tôi qua email:
-        <a href="mailto:mquan592003@gmail.com">mquan592003@gmail.com</a>
-      </p>
+    <footer>
+      <p>© 2025 Trần Minh Quân</p>
+      <!-- thông tin bản quyền -->
     </footer>
   </body>
 </html>
