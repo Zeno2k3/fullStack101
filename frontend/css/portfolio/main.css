@@ -1,0 +1,34 @@
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #27e9d9;
+}
+
+header ul > li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #27e9d9;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_item {
+    padding: 15px;
+}
+
+.nav_item--active a{
+    background-color: #27e9d9;
+    color: #000;
+}
