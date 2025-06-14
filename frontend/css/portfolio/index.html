@@ -19,12 +19,10 @@
     <!-- liên kết đến tệp CSS -->
   </head>
   <body>
-    <header
-    >
-      <h1>MinhQuan.dev</h1>
+    <header>
       <nav>
-        <ul class="nav"
-        >
+        <h1>MinhQuan.dev</h1>
+        <ul class="nav">
           <li class="nav_item nav_item--active">
             <a href="#home">Trang chủ</a>
             <!-- liên kết đến phần Trang chủ -->
@@ -49,41 +47,23 @@
       </nav>
     </header>
     <main>
-      <section
-        id="home"
-        style="
-          height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        "
-      >
+      <section id="home">
         <h1>Trần Minh Quân</h1>
         <img
           src="../../html/portfolio/image/zalo.jpg"
           alt="Hình đại diện"
-          style="width: 150px; height: 150px; border-radius: 50%"
+
         />
         <p>Xin chào, tôi là Trần Minh Quân, một lập trình viên web.</p>
       </section>
-      <section
-        id="about"
-        style="
-          height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        "
-      >
+      <section id="about">
         <h1>Giới thiệu</h1>
         <p>
           Tôi là một lập trình viên web với kinh nghiệm trong việc phát triển
           các ứng dụng web hiện đại.
         </p>
       </section>
-      <section
-        id="skills"
-      >
+      <section id="skills">
         <h1>Kỹ năng</h1>
         <ul>
           <li>HTML</li>
@@ -93,48 +73,88 @@
           <li>Node.js</li>
         </ul>
       </section>
-      <section
-        id="projects"
-      >
+      <section id="projects" class="projects">
         <h1>Các Dự án</h1>
-        <div>
-          <article>
+        <div class="projects_container">
+          <article class="project_item">
             <h2>Dự án 0</h2>
             <p>
               Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
               của dự án.
             </p>
           </article>
-          <article>
+          <article class="project_item">
             <h2>Dự án 1</h2>
             <p>
               Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
               của dự án.
             </p>
           </article>
-          <article>
+          <article class="project_item">
             <h2>Dự án 2</h2>
             <p>
               Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
               của dự án.
             </p>
           </article>
-          <article>
+          <article class="project_item">
             <h2>Dự án 3</h2>
             <p>
               Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
               của dự án.
             </p>
           </article>
-          <article>
+          <article class="project_item">
             <h2>Dự án 4</h2>
             <p>
               Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
               của dự án.
             </p>
           </article>
-          <article>
+          <article class="project_item">
             <h2>Dự án 5</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article class="project_item">
+            <h2>Dự án 6</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article class="project_item">
+            <h2>Dự án 7</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article class="project_item">
+            <h2>Dự án 8</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article class="project_item">
+            <h2>Dự án 9</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article class="project_item">
+            <h2>Dự án 9</h2>
+            <p>
+              Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
+              của dự án.
+            </p>
+          </article>
+          <article class="project_item">
+            <h2>Dự án 10</h2>
             <p>
               Mô tả dự án 1 của tôi, bao gồm các công nghệ sử dụng và mục tiêu
               của dự án.
@@ -142,9 +162,7 @@
           </article>
         </div>
       </section>
-      <section
-        id="contact"
-      >
+      <section id="contact">
         <h1>Liên hệ</h1>
         <form style="display: flex; flex-direction: column; gap: 8px">
           <label for="name" aria-label="Nhập Tên người dùng">Tên:</label>
@@ -158,11 +176,12 @@
           <label for="message" aria-label="Gửi tin nhắn">Tin nhắn:</label>
           <textarea id="message" name="message" required></textarea>
           <button type="submit">Gửi</button>
-          
         </form>
 
-        <a href="https://www.facebook.com/minquan203/">Liện hệ qua facebook</a>
-        <a href="image/zalo.jpg" download>Tải CV</a>
+        <a class="link" href="https://www.facebook.com/minquan203/"
+          >Liện hệ qua facebook</a
+        >
+        <a class="link" href="image/zalo.jpg" download>Tải CV</a>
       </section>
     </main>
     <footer>
